@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Telzir - Simulador de Tarifa</title>
+
+    <!-- CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Topo da Pagina -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <h1 class="card-title text-white m-0">Telzir</h1>
+        </div>
+    </nav>
+
+    <!-- Estrutura da Pagina -->
+    <div class="container">
+
+        <!-- Imagem -->
+        <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="img/imagem1.jpg" alt="">
+            </div>
+
+            <!-- Texto ao lado da imagem -->
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Fale Mais</h1>
+                <p>Com o novo FaleMais da Telzir você adquire o plano que melhor lhe atende e pode falar de graça, só paga os minutos excedentes. </p>
+                <p>Utilize nosso simulador e saiba quanto você pode economizar.</p>
+                <p>Selecione o DDD de origem e o DDD de destino e informe a duração da ligação e não se esqueça de informa qual o seu plano </p>
+                <p>Não perca tempo aproveite essa oportunidade agora mesmo. Fale mais e pague menos </p>
+            </div>
+
+        </div>
+       
+        <!-- Simulador -->
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <h4 class="card-title" class="text-white m-0">Utilize nosso simulador e saiba quanto você pode economizar</h4>
+                <p>Selecione o DDD de origem e o DDD de destino e informe a duração da ligação e não se esqueça de
+                    informa qual o seu plano</p>
+
+                <table class="table table-responsive-xl">
+
+                    <tr>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Tempo/min</th>
+                        <th>Plano</th>
+                        <th class="table-active bg-success">Com FaleMais</th>
+                        <th class="table-active bg-danger">Sem FaleMais</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select id="origem">
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <select id="destino">
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <input id="tempo" type="number" min="0"></label>
+                        </td>
+
+                        <td>
+                            <select id="plano">
+                                <option value="30">30</option>
+                                <option value="60">60</option>
+                                <option value="120">120</option>
+                            </select>
+                        </td>
+
+                        <td class="table-active bg-success">
+                            <p id="ComFalemais"></p>
+                        </td>
+
+                        <td class="table-active bg-danger">
+                            <p id="SemFalemais"></p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="card-body">
+                    <button class="btn btn-primary btn" id="botao" type="button" onclick="calcula()">Calcular</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Destaque 1 -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Fale Mais 30</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destaque 2 -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Fale Mais 60</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destaque 3 -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Fale Mais 120</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <!-- Roda Pé -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Telzir</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap/JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/calcula.js"></script>
+
+</body>
+
+</html>

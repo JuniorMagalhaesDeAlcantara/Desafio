@@ -1,0 +1,125 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+ /* Table Base */
+
+ .table {
+  width: 100%;
+  
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  font-size: 12px;
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table td:last-child {
+   border-right: 0;
+}
+
+.table thead th {
+  font-size: 15px;
+}
+
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+ 
+}
+
+/* Responsive Table */
+
+@media (max-width: 1200px) { 
+
+
+.table-responsive-xl {
+  display: block;
+  position: relative;
+  width: 100%;
+  
+}
+
+.table-responsive-xl thead,
+.table-responsive-xl tbody,
+.table-responsive-xl th,
+.table-responsive-xl td,
+.table-responsive-xl tr {
+  display: block;
+}
+.table-responsive-xl td,
+.table-responsive-xl th {
+  height: 35px;
+}
+
+.table-responsive-xl thead {
+  float: left;
+}
+
+.table-responsive-xl tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.table-responsive-xl tbody tr {
+  display: inline-block;
+  }
+} 
+
+@media (max-width: 767px) { 
+
+/* Responsive Table */
+.table-responsive-xl {
+  display: block;
+  position: relative;
+  width: 100%;
+ 
+}
+
+.table-responsive-xl thead,
+.table-responsive-xl tbody,
+.table-responsive-xl th,
+.table-responsive-xl td,
+.table-responsive-xl tr {
+  display: block;
+}
+.table-responsive-xl td,
+.table-responsive-xl th {
+  height: 35px;
+}
+
+.table-responsive-xl thead {
+  float: left;
+}
+
+.table-responsive-xl tbody {
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.table-responsive-xl tbody tr {
+  display: inline-block;
+}
+
+
+}
+
